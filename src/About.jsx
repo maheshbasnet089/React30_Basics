@@ -31,10 +31,16 @@ import { useState } from "react"
 
 const About = () => {
 
-  const [number, setNumber]= useState({
-    name : "Manish Basnet",
-    address : "Itahari"
-  })
+  const [number, setNumber]= useState([
+    {
+        name : "Manish Basnet",
+        address : "Itahari"
+      },
+      {
+        name : "Manish Basnet",
+        address : "Itahari"
+      }
+  ])
   const increaseCount =()=>{
     setNumber(number+1)
   }
